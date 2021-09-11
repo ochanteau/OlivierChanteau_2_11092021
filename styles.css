@@ -23,12 +23,58 @@ html {
 body {
 font-family: var(--font-family) ;
 font-size: 1.6rem;
+
+
 }
 
 ul {
 list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 img {
 max-width: 100%;
+}
+
+/* container */
+.container{
+  display: block;
+  margin: auto;
+  max-width: 1100px;
+ 
+}
+
+/* header */
+header{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+ul{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+li{
+  padding: 4rem;
+}
+
+li:hover{
+  
+  border-top: solid 1px var(--primary);
+  padding-top: 3.9rem;
+}
+a:hover{
+  color: var(--primary);
+}
+
+.sign-in{
+  color: var(--primary);
+  font-weight: 700;
 }
