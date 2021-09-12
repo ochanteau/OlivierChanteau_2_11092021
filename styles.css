@@ -146,11 +146,11 @@ h1 {
 
 .child {
   padding: 1.5rem 1.6rem !important;
-  left: 2rem !important;
+  left: 2.3rem !important;
 }
 
 .filter p {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 3rem;
   border: solid 3px var(--background);
   border-left: none;
   border-top-right-radius: 2rem;
