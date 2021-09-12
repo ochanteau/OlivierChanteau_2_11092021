@@ -52,6 +52,7 @@ header {
   align-items: center;
 }
 
+/* header -nav */
 ul {
   display: flex;
   flex-flow: row nowrap;
@@ -80,6 +81,7 @@ h1 {
   padding: 0.5rem 0rem;
 }
 
+/* header- search bar */
 .search-bar {
   padding: 2rem 0rem;
   display: flex;
@@ -98,6 +100,7 @@ h1 {
   margin: 0;
   padding: 1rem 2rem;
   border: solid 1px var(--background);
+  outline: none;
 }
 
 .search-bar input::placeholder {
@@ -115,6 +118,7 @@ h1 {
   border-bottom-right-radius: 1rem;
 }
 
+/* header - filter */
 .filter-area {
   display: flex;
   padding-bottom: 3rem;
@@ -157,6 +161,12 @@ h1 {
   border-bottom-right-radius: 2rem;
   font-weight: bold;
   justify-content: center;
+}
+
+.filter p:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--light);
 }
 
 .info {
