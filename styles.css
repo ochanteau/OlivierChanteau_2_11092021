@@ -1,17 +1,17 @@
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Variables */
 :root {
-  --font-family:  'Raleway', sans-serif;
-  --primary:#0065FC;
-  --light: #DEEBFF;
-  --background: #F2F2F2 ;
+  --font-family: "Raleway", sans-serif;
+  --primary: #0065fc;
+  --light: #deebff;
+  --background: #f2f2f2;
+  --border-light: #999;
 }
 
 /* Général */
@@ -19,62 +19,153 @@
 html {
   font-size: 62.5%;
 }
-  
+
 body {
-font-family: var(--font-family) ;
-font-size: 1.6rem;
-
-
+  font-family: var(--font-family);
+  font-size: 1.6rem;
 }
 
 ul {
-list-style: none;
+  list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 img {
-max-width: 100%;
+  max-width: 100%;
 }
 
 /* container */
-.container{
+.container {
   display: block;
   margin: auto;
   max-width: 1100px;
- 
 }
 
 /* header */
-header{
+header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-ul{
+ul {
   display: flex;
   flex-flow: row nowrap;
 }
 
-li{
+li {
   padding: 4rem;
 }
 
-li:hover{
-  
+li:hover {
   border-top: solid 1px var(--primary);
   padding-top: 3.9rem;
 }
-a:hover{
+a:hover {
   color: var(--primary);
 }
 
-.sign-in{
+.sign-in {
   color: var(--primary);
   font-weight: 700;
+}
+
+/* section barre de recherches et filtres */
+
+h1 {
+  padding: 0.5rem 0rem;
+}
+
+.search-bar {
+  padding: 2rem 0rem;
+  display: flex;
+}
+
+.search-bar i {
+  margin: 0;
+  padding: 1rem 1.3rem;
+  border: solid 1px var(--background);
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  background-color: var(--background);
+}
+
+.search-bar input {
+  margin: 0;
+  padding: 1rem 2rem;
+  border: solid 1px var(--background);
+}
+
+.search-bar input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.search-bar button {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  border: 0;
+  background-color: var(--primary);
+  color: white;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.filter-area {
+  display: flex;
+  padding-bottom: 3rem;
+}
+.filter-area h3 {
+  padding: 1rem 1.3rem;
+}
+
+.filter-area p {
+  text-align: center;
+}
+
+.filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filter i {
+  margin: 0;
+  padding: 1.5rem 1.3rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--light);
+  position: relative;
+  left: 1.5rem;
+  color: var(--primary);
+}
+
+.child {
+  padding: 1.5rem 1.6rem !important;
+  left: 2rem !important;
+}
+
+.filter p {
+  padding: 1rem 2rem;
+  border: solid 3px var(--background);
+  border-left: none;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.info {
+  margin-right: 1rem;
+  padding: 0.5rem 0.8rem;
+  border: solid 2px var(--background);
+  border-radius: 50%;
+  left: 1.5rem;
+  color: var(--primary);
+  font-size: 1.3rem;
+  justify-content: center;
 }
