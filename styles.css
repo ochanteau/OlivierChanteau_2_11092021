@@ -31,6 +31,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 img {
@@ -54,20 +55,20 @@ header {
 }
 
 /* header -nav */
-ul {
+nav ul {
   display: flex;
   flex-flow: row nowrap;
 }
 
-li {
+nav li {
   padding: 4rem;
 }
 
-li:hover {
+nav li:hover {
   border-top: solid 1px var(--primary);
   padding-top: 3.9rem;
 }
-a:hover {
+nav a:hover {
   color: var(--primary);
 }
 
@@ -205,7 +206,7 @@ main {
   padding: 3rem;
   border-radius: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 20px 1fr 1fr 20px; */
+
   grid-template-areas:
     "title title title"
     "item1 item2 item3"
@@ -215,7 +216,6 @@ main {
 
 .hosting h3 {
   grid-area: title;
-  /* margin-left: 1rem; */
 }
 
 .hosting-item {
@@ -240,7 +240,7 @@ main {
 }
 
 .hosting-img img {
-  width: 20rem;
+  width: 100%;
   height: 10rem;
   object-fit: cover;
   border-top-left-radius: 1rem;
@@ -256,7 +256,7 @@ main {
 }
 
 .primary-star {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .item1 {
