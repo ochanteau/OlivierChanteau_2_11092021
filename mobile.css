@@ -1,0 +1,44 @@
+/*  */
+.container {
+  display: block;
+  margin: auto;
+  max-width: 42rem;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: initial;
+  align-items: initial;
+  padding: 0;
+}
+
+/* header -nav */
+nav ul {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+header img {
+  margin-right: 10rem;
+}
+
+nav li {
+  padding: 0;
+}
+
+nav li:hover {
+  border-top: solid 1px var(--primary);
+  padding-top: 0;
+}
+nav a:hover {
+  color: var(--primary);
+}
+
+.sign-in {
+  color: var(--primary);
+  font-weight: 700;
+}

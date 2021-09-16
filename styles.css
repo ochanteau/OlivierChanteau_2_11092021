@@ -1,4 +1,4 @@
-/* initialisation */
+/* RESET */
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* Variables */
+/* VARIABLES */
 :root {
   --font-family: "Raleway", sans-serif;
   --primary: #0065fc;
@@ -16,7 +16,7 @@
   --shadow: 0px 0px 5px var(--border-light);
 }
 
-/* Général */
+/* GENERAL*/
 
 html {
   font-size: 62.5%;
@@ -44,23 +44,35 @@ img {
   color: var(--primary) !important;
 }
 
-/* container */
+/* CONTAINER */
 .container {
   display: block;
   margin: auto;
   max-width: 1200px;
 }
 
-/* header */
+/* HEADER*/
+
 header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "logo . nav sign-in";
+  /* flex-flow: row nowrap;
+  justify-content: space-between; */
   align-items: center;
   padding: 0 2rem;
 }
 
 /* header -nav */
+
+nav {
+  grid-area: nav;
+}
+
+nav img {
+  grid-area: logo;
+}
+
 nav ul {
   display: flex;
   flex-flow: row nowrap;
@@ -81,9 +93,16 @@ nav a:hover {
 .sign-in {
   color: var(--primary);
   font-weight: 700;
+  grid-area: sign-in;
+  padding: 4rem 1rem;
 }
 
-/* search bar area */
+.sign-in:hover {
+  border-top: solid 1px var(--primary);
+  padding-top: 3.9rem;
+}
+
+/* SEARCH BAR AREA */
 .search-area {
   margin: 0 2rem;
 }
@@ -92,7 +111,7 @@ h1 {
   padding: 0.5rem 0rem;
 }
 
-/* search bar */
+/* SEARCH BAR */
 
 .search-bar {
   padding: 2rem 0rem;
@@ -192,7 +211,7 @@ h1 {
   justify-content: center;
 }
 
-/* main */
+/* MAIN */
 
 main {
   display: grid;
@@ -205,7 +224,7 @@ main {
   color: var(--background);
 }
 
-/* main hosting */
+/* Main hosting*/
 
 .hosting {
   background-color: var(--background);
@@ -342,6 +361,7 @@ main {
 }
 
 /* ACTIVITY */
+
 aside {
   margin: 2rem;
 }
@@ -428,7 +448,7 @@ aside h5 {
   height: 80%;
 }
 
-/* footer */
+/* FOOTER*/
 
 footer {
   background-color: var(--background);
