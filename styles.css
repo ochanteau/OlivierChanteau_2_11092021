@@ -345,7 +345,7 @@ aside {
 }
 
 aside h3 {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 aside h5 {
@@ -430,7 +430,7 @@ aside h5 {
 
 footer {
   background-color: var(--background);
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   flex-flow: row nowrap;
   padding: 1rem;
@@ -450,13 +450,3 @@ footer h3 {
 footer a {
   margin: 0.5rem 0;
 }
-
-/* .about {
-
-}
-.product {
-
-}
-.help {
-
-} */
