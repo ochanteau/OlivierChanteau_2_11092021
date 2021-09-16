@@ -8,37 +8,39 @@
 /* HEADER */
 
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "logo . sign-in"
+    "nav nav nav";
 
-  flex-flow: row wrap;
-  justify-content: initial;
-  align-items: initial;
+  align-items: center;
   padding: 0;
-}
-
-/* header -nav */
-nav ul {
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 header img {
-  margin-right: 10rem;
+  grid-area: logo;
+  margin-left: 3rem;
 }
 
 nav li {
-  padding: 0;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
 }
-
-nav li:hover {
-  border-top: solid 1px var(--primary);
-  padding-top: 0;
-}
-nav a:hover {
-  color: var(--primary);
-}
-
 .sign-in {
   color: var(--primary);
   font-weight: 700;
+  grid-area: sign-in;
+  padding: 3rem 2rem;
+}
+
+.sign-in:hover {
+  display: none;
+}
+
+nav li:hover {
+  border-bottom: solid 2px var(--primary);
+  padding-top: 0.9rem;
+  border-top: 0;
 }
