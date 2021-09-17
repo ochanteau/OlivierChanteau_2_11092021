@@ -2,7 +2,7 @@
 .container {
   display: block;
   margin: auto;
-  max-width: 42rem;
+  max-width: auto;
 }
 
 /* HEADER */
@@ -27,6 +27,7 @@ nav li {
   padding: 1rem;
   width: 100%;
   text-align: center;
+  border-bottom: solid 2px var(--background);
 }
 .sign-in {
   color: var(--primary);
@@ -43,4 +44,86 @@ nav li:hover {
   border-bottom: solid 2px var(--primary);
   padding-top: 0.9rem;
   border-top: 0;
+}
+
+/* SEARCH BAR AREA */
+.search-area {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  margin: auto;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  padding: 3rem 0rem;
+  display: flex;
+}
+
+.search-bar i {
+  margin: 0;
+  padding: 1.5rem 1.5rem;
+  border: solid 1px var(--background);
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  background-color: var(--background);
+}
+
+.search-bar input {
+  margin: 0;
+  padding: 1.5rem 2.5rem;
+  border: solid 1px var(--background);
+  outline: none;
+}
+
+.research {
+  display: none;
+}
+
+.search-bar button {
+  margin: 0;
+  padding: 1.5rem 0rem;
+  border: 0;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 1rem;
+}
+
+.search-bar button i {
+  display: initial;
+  border-radius: 1rem;
+  position: relative;
+
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+/*  filter */
+.filter-area {
+  display: flex;
+  padding-bottom: 3rem;
+  flex-flow: row wrap;
+}
+
+.filter-area h3 {
+  padding: 1rem 1.3rem;
+  width: 100%;
+}
+
+.filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.info-text {
+  padding: 0 2rem;
 }

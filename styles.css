@@ -147,6 +147,10 @@ h1 {
   border-bottom-right-radius: 1rem;
 }
 
+.search-bar button i {
+  display: none;
+}
+
 /*  filter */
 .filter-area {
   display: flex;
