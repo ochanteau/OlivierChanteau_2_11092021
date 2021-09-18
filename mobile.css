@@ -202,3 +202,92 @@ main {
 .MP2 .MP-text {
   width: 18rem;
 }
+
+/* ACTIVITY */
+
+aside {
+  padding: 3rem;
+  margin: 0;
+}
+
+aside h3 {
+  margin: 2rem 0;
+}
+
+aside h5 {
+  padding: 1rem;
+}
+
+.activity-container {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 16rem;
+  row-gap: 2rem;
+  column-gap: 0;
+}
+
+.activity-item {
+  display: flex;
+  flex-direction: column;
+  height: 16rem !important;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.activity-img {
+  height: 80%;
+}
+
+.activity-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.A-item1 {
+  grid-column: auto;
+  grid-row: 1;
+}
+
+.A-item2 {
+  grid-column: auto;
+  grid-row: 2;
+  height: 100%;
+}
+
+.A-item2 div {
+  height: 80%;
+}
+
+.A-item3 {
+  grid-column: auto;
+  grid-row: 3;
+}
+
+.A-item3 div {
+  height: 80%;
+}
+
+.A-item4 {
+  grid-column: auto;
+  grid-row: 4;
+}
+.A-item5 {
+  grid-column: auto;
+  grid-row: 5;
+}
+
+.A-item5 div {
+  height: 80%;
+}
+
+.A-item6 {
+  grid-column: auto;
+  grid-row: 6;
+}
+.A-item6 div {
+  height: 80%;
+}
