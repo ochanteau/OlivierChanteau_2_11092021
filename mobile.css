@@ -56,8 +56,13 @@ nav li:hover {
 
 h1 {
   font-size: 2rem;
-  padding: 1rem 4rem;
-  margin: auto;
+
+  margin: 1rem;
+  text-align: center;
+}
+
+.search-area p {
+  text-align: center;
 }
 
 /* SEARCH BAR */
@@ -126,4 +131,74 @@ h1 {
 
 .info-text {
   padding: 0 2rem;
+}
+
+/* MAIN */
+
+main {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr;
+}
+
+/* Main hosting*/
+
+.hosting {
+  background-color: initial;
+  display: grid;
+  column-gap: 2.5rem;
+  row-gap: 2rem;
+  margin: 2rem 0;
+  padding: 3rem;
+  border-radius: 0;
+  grid-template-columns: 1fr;
+  grid-row: 2;
+
+  grid-template-areas:
+    "title "
+    "item1 "
+    "item2"
+    "item3"
+    "item4"
+    "item5"
+    "item6"
+    "p";
+}
+
+.hosting h4,
+.hosting p {
+  font-size: 1.1rem;
+}
+
+.display-more {
+  font-size: 1.5rem !important;
+}
+
+/* main most-popular */
+.most-popular {
+  background-color: var(--background);
+  display: grid;
+  grid-row: 1;
+  row-gap: 2rem;
+  margin: 2rem 0;
+  padding: 3rem;
+  border-radius: 0;
+  grid-template-columns: 1fr;
+}
+
+.MP-text {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.MP2 .MP-notation {
+  margin-top: 3rem;
+}
+
+.MP2 .MP-img {
+  width: 11rem;
+}
+
+.MP2 .MP-text {
+  width: 18rem;
 }
