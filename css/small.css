@@ -187,23 +187,6 @@ main {
   grid-template-columns: 1fr;
 }
 
-.MP-text {
-  font-size: 1.2rem;
-  margin: 1rem;
-}
-
-.MP2 .MP-notation {
-  margin-top: 3rem;
-}
-
-.MP2 .MP-img {
-  width: 11rem;
-}
-
-.MP2 .MP-text {
-  width: 18rem;
-}
-
 /* ACTIVITY */
 
 aside {
