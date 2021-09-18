@@ -166,9 +166,13 @@ main {
     "p";
 }
 
-.hosting h4,
-.hosting p {
-  font-size: 1.1rem;
+.hosting-item h4 {
+  margin: 0.5rem 0.5rem 0.2rem 0.5rem;
+}
+
+.hosting-item p {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .display-more {
