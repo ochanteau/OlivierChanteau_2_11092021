@@ -2,7 +2,7 @@
 .container {
   display: block;
   margin: auto;
-  max-width: auto;
+  width: auto;
 }
 
 /* HEADER */

@@ -2,7 +2,7 @@
 .container {
   display: block;
   margin: auto;
-  max-width: auto;
+  width: auto;
 }
 
 /* HEADER */
@@ -207,7 +207,7 @@ main h3 {
 
 .MP-text {
   font-size: 1.2rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .MP2 .MP-notation {
@@ -219,7 +219,7 @@ main h3 {
 }
 
 .MP2 .MP-text {
-  width: 18rem;
+  width: 14rem;
 }
 
 /* ACTIVITY */

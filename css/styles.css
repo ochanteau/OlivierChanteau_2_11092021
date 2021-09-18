@@ -223,7 +223,7 @@ main {
 }
 
 .notation i {
-  color: var(--background);
+  color: rgb(211, 203, 203);
 }
 
 /* Main hosting*/
@@ -281,10 +281,6 @@ main {
 
 .hosting-notation {
   margin: 0.5rem;
-}
-
-.notation i {
-  color: var(--background);
 }
 
 .item1 {
