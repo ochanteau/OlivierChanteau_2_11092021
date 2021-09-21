@@ -75,6 +75,15 @@ nav ul {
   flex-flow: row nowrap;
 }
 
+nav li:first-child a {
+  color: var(--primary);
+}
+
+nav li:first-child {
+  border-top: solid 1px var(--primary);
+  padding-top: 3.9rem;
+}
+
 nav li {
   padding: 4rem;
 }

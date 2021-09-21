@@ -29,6 +29,23 @@ nav li {
   text-align: center;
   border-bottom: solid 2px var(--background);
 }
+
+nav li:first-child a {
+  color: var(--primary);
+}
+
+nav li:first-child {
+  border-bottom: solid 2px var(--primary);
+  padding-top: 0.9rem;
+  border-top: 0;
+}
+
+nav li:hover {
+  border-bottom: solid 2px var(--primary);
+  padding-top: 0.9rem;
+  border-top: 0;
+}
+
 .sign-in {
   color: var(--primary);
   font-weight: 700;
@@ -38,12 +55,6 @@ nav li {
 
 .sign-in:hover {
   display: none;
-}
-
-nav li:hover {
-  border-bottom: solid 2px var(--primary);
-  padding-top: 0.9rem;
-  border-top: 0;
 }
 
 /* SEARCH BAR AREA */
