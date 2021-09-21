@@ -223,7 +223,7 @@ h1 {
 
 /* MAIN */
 
-main {
+.hosting-container {
   display: grid;
   margin: 0 2rem;
   grid-template-columns: 6fr 3fr;
