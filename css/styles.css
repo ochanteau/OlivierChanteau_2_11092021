@@ -221,7 +221,7 @@ h1 {
   justify-content: center;
 }
 
-/* MAIN */
+/* Hosting container */
 
 .hosting-container {
   display: grid;
@@ -234,7 +234,7 @@ h1 {
   color: rgb(211, 203, 203);
 }
 
-/* Main hosting*/
+/*  hosting*/
 
 .hosting {
   background-color: var(--background);
@@ -314,7 +314,7 @@ h1 {
   grid-area: item6;
 }
 
-/* main most-popular */
+/*  most-popular */
 .most-popular {
   background-color: var(--background);
   display: grid;

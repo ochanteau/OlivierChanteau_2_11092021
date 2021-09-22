@@ -144,7 +144,7 @@ h1 {
   padding: 0 2rem;
 }
 
-/* MAIN */
+/* Hosting-container */
 
 .hosting-container {
   display: grid;
@@ -156,7 +156,7 @@ h1 {
   margin-left: 1rem;
 }
 
-/* Main hosting*/
+/*  hosting*/
 
 .hosting {
   background-color: initial;
@@ -196,7 +196,7 @@ h1 {
   font-size: 1.5rem !important;
 }
 
-/* main most-popular */
+/*  most-popular */
 .most-popular {
   background-color: var(--background);
   display: grid;
